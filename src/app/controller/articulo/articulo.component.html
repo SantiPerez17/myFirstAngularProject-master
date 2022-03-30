@@ -1,0 +1,17 @@
+<div class="container">
+    <h4 class="mt-4">Opciones</h4>
+    <div class="d-grid gap-2 d-md-block justify-content">
+        <button type="button" class="btn btn-outline-primary" (click)="goToAddOrUpdateArticle(true)">Agregar</button>
+    </div>
+    <h4 class="mt-4 tittle-listado">Listado de articulos</h4>
+    <div class="articulo" *ngFor="let articulo of articulos">
+        <h4>Nro de articulo: {{ articulo.id }}</h4>
+        <h4>Encabezado: {{ articulo.title }}</h4>
+        <p>Descripción: {{ articulo.body }}</p>
+        <a class="link" (click)="inyectarActiculoEnService(articulo)">Ver detalles</a>
+        <div class="d-grid gap-2 d-md-block justify-content mt-2">     
+            <button type="button" class="btn btn-secondary" (click)="goTorUpdateArticle(false, articulo)">Editar</button>
+            <button type="button" class="btn btn-danger" (click)="deleteArticle(articulo.id)">Borrar</button>
+        </div>
+    </div>
+</div>

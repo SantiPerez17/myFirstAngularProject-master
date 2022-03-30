@@ -1,0 +1,6 @@
+<div class="container mt-4">
+    <p>Nro de pedido: {{pedido.id}}</p>
+    <p>Nombre del cliente: {{pedido.nombreCliente }}</p>
+    <p>Monto total: {{pedido.totalPedido}}</p>
+    <app-datos-de-los-detalles [pedidoDetalle]="pedido.pedidoDetalle" (seEliminoUnProducto)="elHijoEliminoAlgo($any($event))"></app-datos-de-los-detalles>
+</div>

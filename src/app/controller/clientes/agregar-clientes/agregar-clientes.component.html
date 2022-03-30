@@ -1,0 +1,20 @@
+<div class="container">
+    <form [formGroup]="formAddCliente">
+        <div class="form-group">
+            <label for="">Nombre</label>
+            <input type="text" class="form-control" formControlName="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="">apellido</label>
+            <input type="text" class="form-control" formControlName="apellido">
+        </div>
+
+        <div class="form-group">
+            <label for="">Dirección</label>
+            <textarea class="form-control" cols="30" rows="5" formControlName="direccion" ></textarea>
+        </div>
+
+        <button [disabled]="!formAddCliente.valid" class="btn btn-primary" (click)="addCliente()">Agregar</button>
+    </form>
+</div>

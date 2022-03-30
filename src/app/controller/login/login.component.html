@@ -1,0 +1,49 @@
+<div class="container">
+    <form [formGroup]="formLogin">
+        <div class="form-group">
+            <label>Usuario</label>
+            <input type="text" name="usuario" class="form-control" formControlName="nombre">
+            <div *ngIf="formLogin.controls['nombre'].invalid && formLogin.controls['nombre'].dirty" class="alert alert-danger" role="alert">
+                <span *ngIf="formLogin.controls['nombre'].errors?.required">El nombre de usuario es requerido!</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Correo Electronico</label>
+            <input type="text" name="usuario" class="form-control" formControlName="correo">
+
+            <div *ngIf="formLogin.controls['correo'].invalid && formLogin.controls['correo'].dirty">
+                <div *ngIf="formLogin.controls['correo'].errors?.required"  class="alert alert-danger" role="alert">
+                    El correo electronico es requerido!
+                </div>
+                <div *ngIf="formLogin.controls['correo'].errors?.email" class="alert alert-danger" role="alert">
+                    El correo ingresado no tiene un formato válido!
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" name="usuario" class="form-control" formControlName="contraseña">
+
+            <div *ngIf="formLogin.controls['contraseña'].invalid && formLogin.controls['contraseña'].dirty">
+                <div *ngIf="formLogin.controls['contraseña'].errors?.required" class="alert alert-danger" role="alert">
+                    La contraseña es requerida!
+                </div>
+                <div *ngIf="formLogin.controls['contraseña'].errors?.minlength" class="alert alert-danger" role="alert">
+                    La contraseña debe contener al menos 8 caracteres!
+                </div>
+            </div>
+        </div>
+
+        <button [disabled]="!formLogin.valid" class="btn btn-primary" (click)="registrar()">Registrar</button>
+        
+        <button [disabled]="!formLogin.valid" class="btn btn-danger" (click)="editar()">Editar</button>
+    </form>
+</div>
+
+<div class="container" *ngFor="let usuario of usuarios">
+    <h4>{{ usuario.nombre }}</h4>
+    <p>{{ usuario.correo }}</p>
+    <p>{{ usuario.password }}</p>
+</div>
