@@ -17,9 +17,9 @@ export class Pedido {
       this.pedidoDetalle = datos.pedidoDetalle;
       return;
     }
-    this.clienteId = this.clienteId;
-    this.nombreCliente = this.nombreCliente;
-    this.totalPedido = this.totalPedido;
+    this.clienteId = clienteId;
+    this.nombreCliente = nombreCliente;
+    this.totalPedido = totalPedido;
     this.pedidoDetalle = new Array<PedidoDetalle>();
   }
 
