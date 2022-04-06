@@ -6,10 +6,10 @@ export class PedidoDetalle {
   total!: number;
 
   constructor() {
-    this.productoId = this.productoId;
-    this.nombreProducto = this.nombreProducto;
-    this.cantidad = this.cantidad;
-    this.precio = this.precio;
-    this.total = this.total;
+    this.productoId = productoId;
+    this.nombreProducto = nombreProducto;
+    this.cantidad = cantidad;
+    this.precio = precio;
+    this.total = total;
   } 
 } 
