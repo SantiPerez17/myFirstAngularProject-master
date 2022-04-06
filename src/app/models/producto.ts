@@ -5,9 +5,9 @@ export class Producto {
   precio!: number;
 
   constructor() {
-    this.id = this.id;
-    this.nombre = this.nombre;
-    this.descripcion = this.descripcion;
-    this.precio = this.precio;
+    this.id = id;
+    this.nombre = nombre;
+    this.descripcion = descripcion;
+    this.precio = precio;
   }
 }
