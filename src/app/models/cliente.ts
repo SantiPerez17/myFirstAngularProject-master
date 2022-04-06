@@ -5,9 +5,9 @@ export class Cliente {
   direccion?: string;
 
   constructor() {
-    this.id = this.id;
-    this.nombre = this.nombre;
-    this.apellido = this.apellido;
-    this.direccion = this.direccion;
+    this.id = id;
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.direccion = direccion;
   }
 }
