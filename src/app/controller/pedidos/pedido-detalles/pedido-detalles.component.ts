@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { disableDebugTools } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Pedido } from 'src/app/models/pedido';
 import { PedidoService } from 'src/app/services/pedido.service';
