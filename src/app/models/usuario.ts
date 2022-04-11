@@ -6,10 +6,10 @@ export class Usuario{
   apellido?: string;
 
   constructor() {
-    this.id = this.id;
-    this.nombre = this.nombre;
-    this.correo = this.correo;
-    this.password = this.password;
-    this.apellido = this.apellido;
+    this.id = id;
+    this.nombre = nombre;
+    this.correo = correo;
+    this.password = password;
+    this.apellido = apellido;
   }
  }
