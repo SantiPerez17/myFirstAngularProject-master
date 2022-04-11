@@ -49,7 +49,7 @@ export class PedidoService {
 
   getPedidoById(idPedido: number) {
     let pedidos: Pedido[] = this.listadoConPedidosExistentes;
-    let pedido = pedidos.find(pedido => pedido.id == idPedido)
-    return pedido as Pedido;
+    let pedido = pedidos.find(pedido1 => pedido.id == idPedido)
+    return pedido1 as Pedido;
   }
 }
