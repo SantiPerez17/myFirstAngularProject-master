@@ -1,6 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { of } from 'rxjs';
-
 import { AgregarArticuloComponent } from './agregar-articulo.component';
 
 describe('AgregarArticuloComponent', () => {
