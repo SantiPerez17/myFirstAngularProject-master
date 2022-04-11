@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { Event, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Articulo } from 'src/app/models/articulo';
 import { Cliente } from 'src/app/models/cliente';
 import { ArticuloService } from 'src/app/services/articulo.service';
