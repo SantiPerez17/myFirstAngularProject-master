@@ -44,7 +44,7 @@ export class AgregarArticuloComponent implements OnInit {
 
   addArticle() {
     this.articulo = this.formNewArticle.value as Articulo;
-    this.inyectarArticulo.guardarArticulo(this.articulo).subscribe((articuloR) => {
+    this.inyectarArticulo.guardarArticulo(this.articulo).subscribe((_articuloR) => {
       console.log("Has agregado articulo de forma exitosa")
       this.formNewArticle.reset();
      })
@@ -53,7 +53,7 @@ export class AgregarArticuloComponent implements OnInit {
   updateArticle() {
     this.articulo = this.formNewArticle.value as Articulo;
     this.articulo.id = this.inyectarArticulo.articulo.id;
-    this.inyectarArticulo.updateAtricle(this.articulo).subscribe((articuloA) => {
+    this.inyectarArticulo.updateAtricle(this.articulo).subscribe((_articuloA) => {
       console.log("Se actualizo correctamente")
     })
    }
