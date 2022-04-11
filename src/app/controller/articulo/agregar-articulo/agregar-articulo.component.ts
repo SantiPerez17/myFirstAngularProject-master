@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Articulo } from 'src/app/models/articulo';
 import { User } from 'src/app/models/user';
 import { ArticuloService } from 'src/app/services/articulo.service';
